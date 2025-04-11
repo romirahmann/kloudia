@@ -1,0 +1,246 @@
+[
+  {
+    "path": "/register",
+    "method": "post",
+    "controller": "UserController.register"
+  },
+  {
+    "path": "/reset-password/:id",
+    "method": "put",
+    "controller": "UserController.resetPassword"
+  },
+  {
+    "path": "/users",
+    "method": "get",
+    "controller": "UserController.getAllUser"
+  },
+  {
+    "path": "/user/:userId",
+    "method": "get",
+    "controller": "UserController.getUserById"
+  },
+  {
+    "path": "/user/:userId",
+    "method": "put",
+    "controller": "UserController.updateUser"
+  },
+  {
+    "path": "/grup",
+    "method": "post",
+    "controller": "UserController.insertGrup"
+  },
+  {
+    "path": "/grups",
+    "method": "get",
+    "controller": "UserController.getAllGrup"
+  },
+  {
+    "path": "/grup/:grupId",
+    "method": "get",
+    "controller": "UserController.getGrupById"
+  },
+  {
+    "path": "/grup/:grupId",
+    "method": "put",
+    "controller": "UserController.updateGrup"
+  },
+  {
+    "path": "/grup/:grupId",
+    "method": "delete",
+    "controller": "UserController.removeGrup"
+  },
+  {
+    "path": "/cabinets",
+    "method": "get",
+    "controller": "CabinetController.getAllCabinet"
+  },
+  {
+    "path": "/cabinet/:cabinetId",
+    "method": "get",
+    "controller": "CabinetController.getCabinetById"
+  },
+  {
+    "path": "/cabinet/:cabinetId",
+    "method": "put",
+    "controller": "CabinetController.updateCabinet"
+  },
+  {
+    "path": "/cabinet",
+    "method": "post",
+    "controller": "CabinetController.addCabinet"
+  },
+  {
+    "path": "/cabinet/:cabinetId",
+    "method": "delete",
+    "controller": "CabinetController.removeCabinet"
+  },
+  {
+    "path": "/setting-folder",
+    "method": "get",
+    "controller": "SettingController.getSettingFolder"
+  },
+  {
+    "path": "/setting-folder",
+    "method": "put",
+    "controller": "SettingController.updateSettingFolder"
+  },
+  {
+    "path": "/setting-folder",
+    "method": "post",
+    "controller": "SettingController.insertSettingFolder"
+  },
+  {
+    "path": "/setting-smtp",
+    "method": "get",
+    "controller": "SettingController.getSettingSmtp"
+  },
+  {
+    "path": "/setting-smtp",
+    "method": "put",
+    "controller": "SettingController.updateSettingSmtp"
+  },
+  {
+    "path": "/setting-smtp",
+    "method": "post",
+    "controller": "SettingController.insertSettingSmtp"
+  },
+  {
+    "path": "/permissions",
+    "method": "get",
+    "controller": "PermissionController.getAllPermission"
+  },
+
+  {
+    "path": "/permission/:id",
+    "method": "get",
+    "controller": "PermissionController.getPermissionById"
+  },
+  {
+    "path": "/permission/:id",
+    "method": "put",
+    "controller": "PermissionController.updatePermission"
+  },
+  {
+    "path": "/permission",
+    "method": "post",
+    "controller": "PermissionController.insertPermission"
+  },
+  {
+    "path": "/permission/:id",
+    "method": "delete",
+    "controller": "PermissionController.deletePermission"
+  },
+  {
+    "path": "/types",
+    "method": "get",
+    "controller": "ClassificationController.getAllType"
+  },
+
+  {
+    "path": "/type/:id",
+    "method": "get",
+    "controller": "ClassificationController.getTypeById"
+  },
+  {
+    "path": "/type/:id",
+    "method": "put",
+    "controller": "ClassificationController.updateType"
+  },
+  {
+    "path": "/type",
+    "method": "post",
+    "controller": "ClassificationController.insertType"
+  },
+  {
+    "path": "/type/:id",
+    "method": "delete",
+    "controller": "ClassificationController.deleteType"
+  },
+  {
+    "path": "/classifications",
+    "method": "get",
+    "controller": "ClassificationController.getAllClassification"
+  },
+
+  {
+    "path": "/classification/:id",
+    "method": "get",
+    "controller": "ClassificationController.getClassificationById"
+  },
+  {
+    "path": "/classification/:id",
+    "method": "put",
+    "controller": "ClassificationController.updateClassification"
+  },
+  {
+    "path": "/classification",
+    "method": "post",
+    "controller": "ClassificationController.insertClassification"
+  },
+  {
+    "path": "/classification/:id",
+    "method": "delete",
+    "controller": "ClassificationController.deleteClassification"
+  },
+  {
+    "path": "/structure/:classificationId",
+    "method": "post",
+    "controller": "ClassificationController.insertFieldStructure"
+  },
+  {
+    "path": "/structures/:classificationId",
+    "method": "get",
+    "controller": "ClassificationController.getStructuresByClassification"
+  },
+  {
+    "path": "/detail/:classificationId",
+    "method": "post",
+    "controller": "ClassificationController.insertTblDetail"
+  },
+  {
+    "path": "/details/:classificationId",
+    "method": "get",
+    "controller": "ClassificationController.getDetailsByClassification"
+  },
+  {
+    "path": "/tenants",
+    "method": "get",
+    "controller": "TenantController.getAllTenant"
+  },
+  {
+    "path": "/tenant/:id",
+    "method": "get",
+    "controller": "TenantController.getTenantById"
+  },
+  {
+    "path": "/tenant/:id",
+    "method": "put",
+    "controller": "TenantController.updateTenant"
+  },
+  {
+    "path": "/softdelete-tenant/:id",
+    "method": "put",
+    "controller": "TenantController.softDeleteTenant"
+  },
+  {
+    "path": "/tenant",
+    "method": "post",
+    "controller": "TenantController.addTenant"
+  },
+  {
+    "path": "/tenant/:id",
+    "method": "delete",
+    "controller": "TenantController.deleteTenant"
+  },
+  {
+    "path": "/upload-file",
+    "method": "post",
+    "controller": "UploadController.uploadFile",
+    "middleware": "upload.single('file')"
+  },
+  {
+    "path": "/file/:storedFilename",
+    "method": "get",
+    "controller": "UploadController.getFile"
+  }
+]
